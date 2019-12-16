@@ -6,7 +6,7 @@ import akka.stream.ActorMaterializer
 import scala.io.StdIn
 
 object Server extends App {
-  implicit val system = ActorSystem("my-system")
+  //implicit val system = ActorSystem("my-system")
   implicit val materializer = ActorMaterializer()
   // needed for the future flatMap/onComplete in the end
   implicit val executionContext = system.dispatcher
